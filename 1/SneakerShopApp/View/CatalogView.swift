@@ -31,7 +31,7 @@ struct CatalogView: View {
                         }
                     }
                 }
-            }.navigationTitle("Sneakers")
+            }.navigationTitle("Каталог")
         }
     }
 }
