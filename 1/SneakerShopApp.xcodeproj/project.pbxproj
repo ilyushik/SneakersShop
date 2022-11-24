@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabBar.swift */; };
+		158DA739292FFF42004A7FE0 /* Sneaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA738292FFF42004A7FE0 /* Sneaker.swift */; };
+		158DA73B293000B8004A7FE0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA73A293000B8004A7FE0 /* ProductCell.swift */; };
+		158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */; };
+		158DA74229300C69004A7FE0 /* SneakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA74129300C69004A7FE0 /* SneakerView.swift */; };
+		158DA74429301242004A7FE0 /* HideTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA74329301242004A7FE0 /* HideTabView.swift */; };
 		15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */; };
 		15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAD292FA62400C9E1BD /* AuthView.swift */; };
 		15CBFCB0292FA62500C9E1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CBFCAF292FA62500C9E1BD /* Assets.xcassets */; };
@@ -39,6 +44,11 @@
 
 /* Begin PBXFileReference section */
 		150D4FF1292FCF3E004C154E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		158DA738292FFF42004A7FE0 /* Sneaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sneaker.swift; sourceTree = "<group>"; };
+		158DA73A293000B8004A7FE0 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		158DA74129300C69004A7FE0 /* SneakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerView.swift; sourceTree = "<group>"; };
+		158DA74329301242004A7FE0 /* HideTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabView.swift; sourceTree = "<group>"; };
 		15CBFCA8292FA62400C9E1BD /* SneakerShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerShopAppApp.swift; sourceTree = "<group>"; };
 		15CBFCAD292FA62400C9E1BD /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -79,6 +89,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		158DA737292FFF0D004A7FE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15CBFCAD292FA62400C9E1BD /* AuthView.swift */,
+				150D4FF1292FCF3E004C154E /* MainTabBar.swift */,
+				15EC8522292FDB1E000EECE4 /* ProfileView.swift */,
+				15EC8520292FDB03000EECE4 /* CartView.swift */,
+				15EC851E292FDACC000EECE4 /* CatalogView.swift */,
+				158DA73C293000BF004A7FE0 /* CComponents */,
+				158DA74129300C69004A7FE0 /* SneakerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		158DA73C293000BF004A7FE0 /* CComponents */ = {
+			isa = PBXGroup;
+			children = (
+				158DA73A293000B8004A7FE0 /* ProductCell.swift */,
+			);
+			path = CComponents;
+			sourceTree = "<group>";
+		};
+		158DA73D29300691004A7FE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				158DA738292FFF42004A7FE0 /* Sneaker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		158DA740293006C3004A7FE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		15CBFC9F292FA62400C9E1BD = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +151,12 @@
 			isa = PBXGroup;
 			children = (
 				15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */,
-				15CBFCAD292FA62400C9E1BD /* AuthView.swift */,
-				150D4FF1292FCF3E004C154E /* MainTabBar.swift */,
-				15EC8522292FDB1E000EECE4 /* ProfileView.swift */,
-				15EC8520292FDB03000EECE4 /* CartView.swift */,
-				15EC851E292FDACC000EECE4 /* CatalogView.swift */,
+				158DA740293006C3004A7FE0 /* ViewModel */,
+				158DA73D29300691004A7FE0 /* Model */,
+				158DA737292FFF0D004A7FE0 /* View */,
 				15CBFCAF292FA62500C9E1BD /* Assets.xcassets */,
 				15CBFCB1292FA62500C9E1BD /* Preview Content */,
+				158DA74329301242004A7FE0 /* HideTabView.swift */,
 			);
 			path = SneakerShopApp;
 			sourceTree = "<group>";
@@ -270,11 +317,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				15EC8521292FDB03000EECE4 /* CartView.swift in Sources */,
+				158DA74429301242004A7FE0 /* HideTabView.swift in Sources */,
+				158DA739292FFF42004A7FE0 /* Sneaker.swift in Sources */,
 				15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */,
 				15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */,
+				158DA74229300C69004A7FE0 /* SneakerView.swift in Sources */,
 				15EC851F292FDACC000EECE4 /* CatalogView.swift in Sources */,
+				158DA73B293000B8004A7FE0 /* ProductCell.swift in Sources */,
 				15EC8523292FDB1E000EECE4 /* ProfileView.swift in Sources */,
 				150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */,
+				158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
