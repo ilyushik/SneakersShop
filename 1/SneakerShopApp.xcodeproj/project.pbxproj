@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		150D4FF2292FCF3E004C154E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabView.swift */; };
+		150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabBar.swift */; };
 		15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */; };
-		15CBFCAE292FA62400C9E1BD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAD292FA62400C9E1BD /* ContentView.swift */; };
+		15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAD292FA62400C9E1BD /* AuthView.swift */; };
 		15CBFCB0292FA62500C9E1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CBFCAF292FA62500C9E1BD /* Assets.xcassets */; };
 		15CBFCB3292FA62500C9E1BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CBFCB2292FA62500C9E1BD /* Preview Assets.xcassets */; };
 		15CBFCBD292FA62500C9E1BD /* SneakerShopAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCBC292FA62500C9E1BD /* SneakerShopAppTests.swift */; };
 		15CBFCC7292FA62500C9E1BD /* SneakerShopAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCC6292FA62500C9E1BD /* SneakerShopAppUITests.swift */; };
 		15CBFCC9292FA62500C9E1BD /* SneakerShopAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCC8292FA62500C9E1BD /* SneakerShopAppUITestsLaunchTests.swift */; };
+		15EC851F292FDACC000EECE4 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC851E292FDACC000EECE4 /* CatalogView.swift */; };
+		15EC8521292FDB03000EECE4 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC8520292FDB03000EECE4 /* CartView.swift */; };
+		15EC8523292FDB1E000EECE4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC8522292FDB1E000EECE4 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		150D4FF1292FCF3E004C154E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		150D4FF1292FCF3E004C154E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		15CBFCA8292FA62400C9E1BD /* SneakerShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerShopAppApp.swift; sourceTree = "<group>"; };
-		15CBFCAD292FA62400C9E1BD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		15CBFCAD292FA62400C9E1BD /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		15CBFCAF292FA62500C9E1BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CBFCB2292FA62500C9E1BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15CBFCB8292FA62500C9E1BD /* SneakerShopAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneakerShopAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +49,9 @@
 		15CBFCC2292FA62500C9E1BD /* SneakerShopAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SneakerShopAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CBFCC6292FA62500C9E1BD /* SneakerShopAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerShopAppUITests.swift; sourceTree = "<group>"; };
 		15CBFCC8292FA62500C9E1BD /* SneakerShopAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerShopAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15EC851E292FDACC000EECE4 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		15EC8520292FDB03000EECE4 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		15EC8522292FDB1E000EECE4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */,
-				15CBFCAD292FA62400C9E1BD /* ContentView.swift */,
-				150D4FF1292FCF3E004C154E /* MainTabView.swift */,
+				15CBFCAD292FA62400C9E1BD /* AuthView.swift */,
+				150D4FF1292FCF3E004C154E /* MainTabBar.swift */,
+				15EC8522292FDB1E000EECE4 /* ProfileView.swift */,
+				15EC8520292FDB03000EECE4 /* CartView.swift */,
+				15EC851E292FDACC000EECE4 /* CatalogView.swift */,
 				15CBFCAF292FA62500C9E1BD /* Assets.xcassets */,
 				15CBFCB1292FA62500C9E1BD /* Preview Content */,
 			);
@@ -260,9 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CBFCAE292FA62400C9E1BD /* ContentView.swift in Sources */,
+				15EC8521292FDB03000EECE4 /* CartView.swift in Sources */,
+				15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */,
 				15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */,
-				150D4FF2292FCF3E004C154E /* MainTabView.swift in Sources */,
+				15EC851F292FDACC000EECE4 /* CatalogView.swift in Sources */,
+				15EC8523292FDB1E000EECE4 /* ProfileView.swift in Sources */,
+				150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

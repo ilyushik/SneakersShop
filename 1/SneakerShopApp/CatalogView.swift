@@ -1,5 +1,5 @@
 //
-//  MainTabView.swift
+//  CatalogView.swift
 //  SneakerShopApp
 //
 //  Created by  illia on 24/11/2022.
@@ -7,16 +7,14 @@
 
 import SwiftUI
 
-struct MainTabView: View {
+struct CatalogView: View {
     var body: some View {
-        TabView {
-            //
-        }
+        Text("Каталог!!!")
     }
 }
 
-struct MainTabView_Previews: PreviewProvider {
+struct CatalogView_Previews: PreviewProvider {
     static var previews: some View {
-        MainTabView()
+        CatalogView()
     }
 }
