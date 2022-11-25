@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabBar.swift */; };
+		152890932931228E00E6A38B /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152890922931228E00E6A38B /* PositionCell.swift */; };
 		157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AB2930436300945867 /* SneakerDetailViewModel.swift */; };
 		157579AE29304CB900945867 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AD29304CB900945867 /* CartViewModel.swift */; };
 		157579B029304CE900945867 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AF29304CE900945867 /* Position.swift */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		150D4FF1292FCF3E004C154E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		152890922931228E00E6A38B /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
 		157579AB2930436300945867 /* SneakerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerDetailViewModel.swift; sourceTree = "<group>"; };
 		157579AD29304CB900945867 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		157579AF29304CE900945867 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				158DA73A293000B8004A7FE0 /* ProductCell.swift */,
+				152890922931228E00E6A38B /* PositionCell.swift */,
 			);
 			path = CComponents;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				15EC8521292FDB03000EECE4 /* CartView.swift in Sources */,
 				158DA74429301242004A7FE0 /* HideTabView.swift in Sources */,
 				158DA739292FFF42004A7FE0 /* Sneaker.swift in Sources */,
+				152890932931228E00E6A38B /* PositionCell.swift in Sources */,
 				157579AE29304CB900945867 /* CartViewModel.swift in Sources */,
 				15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */,
 				15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */,

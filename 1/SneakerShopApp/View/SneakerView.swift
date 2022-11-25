@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SneakerView: View {
-    @Environment(\.presentationMode) var dismiss
+    @Environment(\.presentationMode) var presentationMode
     @State var size = "40"
     @State var count = 1
     var viewModel: SneakerDetailViewModel
@@ -69,7 +69,14 @@ struct SneakerView: View {
                         .padding(.top)
                     
                     Button {
-                        print("Add to cart")
+                        var position = Position(id: UUID().uuidString,
+                                                sneaker: viewModel.sneaker,
+                                                count: self.count)
+                        position.sneaker.price = viewModel.getPrice(size: size)
+                        
+                        CartViewModel.shared.addPosition(position)
+                        presentationMode.wrappedValue.dismiss()
+                        
                     } label: {
                         ZStack {
                             Capsule()
@@ -91,7 +98,7 @@ struct SneakerView: View {
             }.toolbar {
                     ToolbarItem(placement: .navigationBarLeading) {
                         Button {
-                            dismiss.wrappedValue.dismiss()
+                            presentationMode.wrappedValue.dismiss()
                         } label: {
                             Image(systemName: "arrow.left")
                                 .foregroundColor(.black)
