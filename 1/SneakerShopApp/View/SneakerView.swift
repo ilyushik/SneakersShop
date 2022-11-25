@@ -58,10 +58,7 @@ struct SneakerView: View {
                         .padding(.leading)
                 }.padding(.horizontal)
                 
-                Spacer()
-                
                 Button {
-                    
                     print("Add to cart")
                 } label: {
                     ZStack {
@@ -71,7 +68,7 @@ struct SneakerView: View {
                         Text("Добавить в корзину")
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
-                    }
+                    }.padding(.top, 40)
                 }
 
                 
