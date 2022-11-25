@@ -13,32 +13,32 @@ struct MainTabBar: View {
         TabView {
             CatalogView()
                 .tabItem {
-                    //if !state.hideTabView {
+                    if !state.hideTabView {
                         VStack {
                             Image(systemName: "menucard")
                             Text("Каталог")
                         }
-                    //}
+                    }
                 }
             CartView(viewModel: CartViewModel())
                 .tabItem {
-                    //if !state.hideTabView {
+                    if !state.hideTabView {
                         VStack {
                             Image(systemName: "cart")
                             Text("Корзина")
                         }
-                    //}
+                    }
                 }
             ProfileView()
                 .tabItem {
-                    //if !state.hideTabView {
+                    if !state.hideTabView {
                         VStack {
                             Image(systemName: "person")
                             Text("Профиль")
                         }
-                    //}
+                    }
                 }
-        }//.environmentObject(state)
+        }.environmentObject(state)
     }
 }
 

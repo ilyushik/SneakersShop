@@ -24,8 +24,9 @@ struct CatalogView: View {
                             NavigationLink {
                                 let vm = SneakerDetailViewModel(sneaker: item)
                                 SneakerView(viewModel: vm)
-                                    //.onAppear(perform: { state.hideTabView = true })
-                                           // .onDisappear(perform: { state.hideTabView = false })
+                                    .navigationBarBackButtonHidden(true)
+                                    .onAppear(perform: { state.hideTabView = true })
+                                            .onDisappear(perform: { state.hideTabView = false })
                             } label: {
                                 ProductCell(sneaker: item)
                             }
