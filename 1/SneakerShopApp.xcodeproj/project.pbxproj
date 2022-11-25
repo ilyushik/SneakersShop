@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabBar.swift */; };
+		157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AB2930436300945867 /* SneakerDetailViewModel.swift */; };
+		157579AE29304CB900945867 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AD29304CB900945867 /* CartViewModel.swift */; };
+		157579B029304CE900945867 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AF29304CE900945867 /* Position.swift */; };
 		158DA739292FFF42004A7FE0 /* Sneaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA738292FFF42004A7FE0 /* Sneaker.swift */; };
 		158DA73B293000B8004A7FE0 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA73A293000B8004A7FE0 /* ProductCell.swift */; };
 		158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */; };
@@ -44,6 +47,9 @@
 
 /* Begin PBXFileReference section */
 		150D4FF1292FCF3E004C154E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
+		157579AB2930436300945867 /* SneakerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerDetailViewModel.swift; sourceTree = "<group>"; };
+		157579AD29304CB900945867 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		157579AF29304CE900945867 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		158DA738292FFF42004A7FE0 /* Sneaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sneaker.swift; sourceTree = "<group>"; };
 		158DA73A293000B8004A7FE0 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
@@ -97,8 +103,8 @@
 				15EC8522292FDB1E000EECE4 /* ProfileView.swift */,
 				15EC8520292FDB03000EECE4 /* CartView.swift */,
 				15EC851E292FDACC000EECE4 /* CatalogView.swift */,
-				158DA73C293000BF004A7FE0 /* CComponents */,
 				158DA74129300C69004A7FE0 /* SneakerView.swift */,
+				158DA73C293000BF004A7FE0 /* CComponents */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -115,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				158DA738292FFF42004A7FE0 /* Sneaker.swift */,
+				157579AF29304CE900945867 /* Position.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */,
+				157579AB2930436300945867 /* SneakerDetailViewModel.swift */,
+				157579AD29304CB900945867 /* CartViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -316,9 +325,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				157579B029304CE900945867 /* Position.swift in Sources */,
 				15EC8521292FDB03000EECE4 /* CartView.swift in Sources */,
 				158DA74429301242004A7FE0 /* HideTabView.swift in Sources */,
 				158DA739292FFF42004A7FE0 /* Sneaker.swift in Sources */,
+				157579AE29304CB900945867 /* CartViewModel.swift in Sources */,
 				15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */,
 				15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */,
 				158DA74229300C69004A7FE0 /* SneakerView.swift in Sources */,
@@ -327,6 +338,7 @@
 				15EC8523292FDB1E000EECE4 /* ProfileView.swift in Sources */,
 				150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */,
 				158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */,
+				157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

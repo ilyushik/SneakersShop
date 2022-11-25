@@ -22,9 +22,10 @@ struct CatalogView: View {
                     LazyVGrid(columns: columns,spacing: 20) {
                         ForEach(CatalogViewModel.shared.sneakers, id: \.id) { item in
                             NavigationLink {
-                                SneakerView(sneaker: item)
-                                    .onAppear(perform: { state.hideTabView = true })
-                                            .onDisappear(perform: { state.hideTabView = false })
+                                let vm = SneakerDetailViewModel(sneaker: item)
+                                SneakerView(viewModel: vm)
+                                    //.onAppear(perform: { state.hideTabView = true })
+                                           // .onDisappear(perform: { state.hideTabView = false })
                             } label: {
                                 ProductCell(sneaker: item)
                             }
