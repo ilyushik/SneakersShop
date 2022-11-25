@@ -28,7 +28,6 @@ struct PositionCell: View {
                 Text("\(position.cost)€")
                     .bold()
             }
-            // delete func
             
         }.padding()
     }
