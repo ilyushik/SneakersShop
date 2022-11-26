@@ -42,20 +42,6 @@ struct MainTabBar: View {
     }
 }
 
-//extension UITabBarController {
-//    override open func viewDidAppear(_ animated: Bool) {
-//        super.viewDidAppear(animated)
-//        let standardAppearance = UITabBarAppearance()
-//
-//        //standardAppearance.configureWithOpaqueBackground()
-//
-//        standardAppearance.configureWithTransparentBackground()
-//
-//
-//        tabBar.standardAppearance = standardAppearance
-//    }
-//}
-
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {

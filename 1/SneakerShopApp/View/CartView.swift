@@ -10,6 +10,7 @@ import SwiftUI
 struct CartView: View {
    @StateObject var viewModel: CartViewModel
     var body: some View {
+        NavigationView {
             VStack {
                 List(viewModel.positions) { position in
                     PositionCell(position: position)
@@ -19,11 +20,10 @@ struct CartView: View {
                             } label: {
                                 Label("Удалить", systemImage: "trash")
                             }.tint(.red)
-
+                            
                         }
                 }.listStyle(.plain)
-                    .navigationTitle("Корзина")
-                    
+                
                 
                 HStack {
                     Text("Всего:")
@@ -59,10 +59,11 @@ struct CartView: View {
                             .background(.green)
                             .cornerRadius(30)
                     }
-
+                    
                 }.padding(.horizontal)
             }.padding(.bottom)
-                
+                .navigationTitle("Корзина")
+        }
     }
 }
 

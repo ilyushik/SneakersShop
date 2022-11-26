@@ -60,13 +60,11 @@ struct ProfileView: View {
             Text("Ваши заказы:")
                 .bold()
                 .padding(.top)
-            // таблица с заказами
             List {
                 Text("Ваши заказы буду тут")
             }.listStyle(.plain)
             
             Button {
-                //quit
                 isOutAlert.toggle()
             } label: {
                 Text("Выйти")
@@ -87,15 +85,6 @@ struct ProfileView: View {
             .fullScreenCover(isPresented: $isOut) {
                 AuthView()
             }
-            
-
-            
-            
-            
-            
-            
-            
-            
             
            Spacer()
         }.fullScreenCover(isPresented: $isOut) {
