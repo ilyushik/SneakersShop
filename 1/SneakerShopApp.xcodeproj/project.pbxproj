@@ -17,6 +17,10 @@
 		158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */; };
 		158DA74229300C69004A7FE0 /* SneakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA74129300C69004A7FE0 /* SneakerView.swift */; };
 		158DA74429301242004A7FE0 /* HideTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158DA74329301242004A7FE0 /* HideTabView.swift */; };
+		15AFDADA2931983A0048AC4E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15AFDAD92931983A0048AC4E /* GoogleService-Info.plist */; };
+		15AFDADD293199DE0048AC4E /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 15AFDADC293199DE0048AC4E /* FirebaseAuth */; };
+		15AFDADF293199DE0048AC4E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 15AFDADE293199DE0048AC4E /* FirebaseFirestore */; };
+		15AFDAE1293199DE0048AC4E /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 15AFDAE0293199DE0048AC4E /* FirebaseStorage */; };
 		15CBFCAC292FA62400C9E1BD /* SneakerShopAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */; };
 		15CBFCAE292FA62400C9E1BD /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CBFCAD292FA62400C9E1BD /* AuthView.swift */; };
 		15CBFCB0292FA62500C9E1BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CBFCAF292FA62500C9E1BD /* Assets.xcassets */; };
@@ -57,6 +61,7 @@
 		158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
 		158DA74129300C69004A7FE0 /* SneakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerView.swift; sourceTree = "<group>"; };
 		158DA74329301242004A7FE0 /* HideTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideTabView.swift; sourceTree = "<group>"; };
+		15AFDAD92931983A0048AC4E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		15CBFCA8292FA62400C9E1BD /* SneakerShopApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SneakerShopApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerShopAppApp.swift; sourceTree = "<group>"; };
 		15CBFCAD292FA62400C9E1BD /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
@@ -77,6 +82,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15AFDADD293199DE0048AC4E /* FirebaseAuth in Frameworks */,
+				15AFDADF293199DE0048AC4E /* FirebaseFirestore in Frameworks */,
+				15AFDAE1293199DE0048AC4E /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,9 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				15CBFCAB292FA62400C9E1BD /* SneakerShopAppApp.swift */,
-				158DA740293006C3004A7FE0 /* ViewModel */,
 				158DA73D29300691004A7FE0 /* Model */,
 				158DA737292FFF0D004A7FE0 /* View */,
+				158DA740293006C3004A7FE0 /* ViewModel */,
+				15AFDAD92931983A0048AC4E /* GoogleService-Info.plist */,
 				15CBFCAF292FA62500C9E1BD /* Assets.xcassets */,
 				15CBFCB1292FA62500C9E1BD /* Preview Content */,
 				158DA74329301242004A7FE0 /* HideTabView.swift */,
@@ -214,6 +223,11 @@
 			dependencies = (
 			);
 			name = SneakerShopApp;
+			packageProductDependencies = (
+				15AFDADC293199DE0048AC4E /* FirebaseAuth */,
+				15AFDADE293199DE0048AC4E /* FirebaseFirestore */,
+				15AFDAE0293199DE0048AC4E /* FirebaseStorage */,
+			);
 			productName = SneakerShopApp;
 			productReference = 15CBFCA8292FA62400C9E1BD /* SneakerShopApp.app */;
 			productType = "com.apple.product-type.application";
@@ -286,6 +300,9 @@
 				Base,
 			);
 			mainGroup = 15CBFC9F292FA62400C9E1BD;
+			packageReferences = (
+				15AFDADB293199DE0048AC4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 15CBFCA9292FA62400C9E1BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -304,6 +321,7 @@
 			files = (
 				15CBFCB3292FA62500C9E1BD /* Preview Assets.xcassets in Resources */,
 				15CBFCB0292FA62500C9E1BD /* Assets.xcassets in Resources */,
+				15AFDADA2931983A0048AC4E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -661,6 +679,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		15AFDADB293199DE0048AC4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		15AFDADC293199DE0048AC4E /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15AFDADB293199DE0048AC4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		15AFDADE293199DE0048AC4E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15AFDADB293199DE0048AC4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		15AFDAE0293199DE0048AC4E /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15AFDADB293199DE0048AC4E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 15CBFCA0292FA62400C9E1BD /* Project object */;
 }
