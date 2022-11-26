@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct AuthView: View {
+    
+    
     @State private var isTabViewShow: Bool = false
     @State private var isAuth = true
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var confirmPassword: String = ""
+    @State private var isShowAlert = false
+    @State private var alertMessage = ""
+    
+    
     var body: some View {
         ZStack {
             Image("back")
@@ -61,10 +67,29 @@ struct AuthView: View {
                         isTabViewShow.toggle()
                     } else {
                         print("Регистрация пользователя")
-                        self.email = ""
-                        self.password = ""
-                        self.confirmPassword = ""
-                        self.isAuth.toggle()
+                        
+                        guard password == confirmPassword else {
+                            self.alertMessage = "Пароли не совпадают"
+                            self.isShowAlert.toggle()
+                            return
+                        }
+                        
+                        AuthService.shared.signUp(email: self.email, password: self.password) { result in
+                            switch result {
+                            case .success(let user):
+                                alertMessage = "Вы зарегестрировались с \(user.email!)"
+                                self.isShowAlert.toggle()
+                                self.email = ""
+                                self.password = ""
+                                self.confirmPassword = ""
+                                self.isAuth.toggle()
+                            case .failure(let error):
+                                alertMessage = "Ошибка регестрации: \(error.localizedDescription)"
+                                self.isShowAlert.toggle()
+                            }
+                        }
+                        
+                        
                     }
                 } label: {
                     ZStack {
@@ -89,6 +114,14 @@ struct AuthView: View {
         }.animation(.spring(), value: isAuth)
             .fullScreenCover(isPresented: $isTabViewShow) {
                 MainTabBar()
+            }
+            .alert(alertMessage, isPresented: $isShowAlert) {
+                Button {
+                    //
+                } label: {
+                    Text("OK")
+                }
+
             }
     }
 }
