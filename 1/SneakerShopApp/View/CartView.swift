@@ -16,7 +16,8 @@ struct CartView: View {
                     Button {
                         viewModel.positions.removeAll()
                     } label: {
-                        Image(systemName: "trash")
+                        // Image(systemName: "trash")
+                        Text("Очистить")
                     }
                 }.padding(.trailing)
                 List(viewModel.positions) { position in

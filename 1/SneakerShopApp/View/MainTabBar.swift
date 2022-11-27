@@ -69,39 +69,6 @@ struct MainTabBar: View {
                 }
             }
         }.environmentObject(state)
-        
-        
-        
-        
-//        TabView {
-//            CatalogView()
-//                .tabItem {
-//                    if !state.hideTabView {
-//                        VStack {
-//                            Image(systemName: "menucard")
-//                            Text("Каталог")
-//                        }
-//                    }
-//                }
-//            CartView(viewModel: CartViewModel.shared)
-//                .tabItem {
-//                    if !state.hideTabView {
-//                        VStack {
-//                            Image(systemName: "cart")
-//                            Text("Корзина")
-//                        }
-//                    }
-//                }
-//            ProfileView()
-//                .tabItem {
-//                    if !state.hideTabView {
-//                        VStack {
-//                            Image(systemName: "person")
-//                            Text("Профиль")
-//                        }
-//                    }
-//                }
-//        }.environmentObject(state)
     }
 }
 
