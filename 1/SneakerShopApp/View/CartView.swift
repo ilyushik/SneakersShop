@@ -10,7 +10,6 @@ import SwiftUI
 struct CartView: View {
    @StateObject var viewModel: CartViewModel
     var body: some View {
-        NavigationView {
             VStack {
                 List(viewModel.positions) { position in
                     PositionCell(position: position)
@@ -61,9 +60,11 @@ struct CartView: View {
                     }
                     
                 }.padding(.horizontal)
-            }.padding(.bottom)
-                .navigationTitle("Корзина")
-        }
+            }.safeAreaInset(edge: .bottom) {
+                Rectangle()
+                    .frame(height: UIScreen.main.bounds.height * 0.07)
+                    .foregroundColor(.clear)
+            }
     }
 }
 

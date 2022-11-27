@@ -87,7 +87,12 @@ struct ProfileView: View {
             }
             
            Spacer()
-        }.fullScreenCover(isPresented: $isOut) {
+        }.safeAreaInset(edge: .bottom) {
+            Rectangle()
+                .frame(height: UIScreen.main.bounds.height * 0.07)
+                .foregroundColor(.clear)
+        }
+        .fullScreenCover(isPresented: $isOut) {
             AuthView()
         }
     }

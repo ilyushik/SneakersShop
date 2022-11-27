@@ -25,8 +25,8 @@ struct CatalogView: View {
                                 let vm = SneakerDetailViewModel(sneaker: item)
                                 SneakerView(viewModel: vm)
                                     .navigationBarBackButtonHidden(true)
-                                    .onAppear(perform: { state.hideTabView = true })
-                                            .onDisappear(perform: { state.hideTabView = false })
+                                    .onAppear { state.hideTabView = true }
+                                            .onDisappear { state.hideTabView = false }
                             } label: {
                                 ProductCell(sneaker: item)
                             }
@@ -34,6 +34,11 @@ struct CatalogView: View {
                     }
                 }
             }.navigationTitle("Каталог")
+                .safeAreaInset(edge: .bottom) {
+                    Rectangle()
+                        .frame(height: UIScreen.main.bounds.height * 0.07)
+                        .foregroundColor(.clear)
+                }
         }
     }
 }

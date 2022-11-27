@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabBar.swift */; };
 		152890932931228E00E6A38B /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152890922931228E00E6A38B /* PositionCell.swift */; };
+		1548053D29338240004174A5 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548053C29338240004174A5 /* MainTabBarViewModel.swift */; };
 		155D69F32932479400C2B0E0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D69F22932479400C2B0E0 /* AuthService.swift */; };
 		157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AB2930436300945867 /* SneakerDetailViewModel.swift */; };
 		157579AE29304CB900945867 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AD29304CB900945867 /* CartViewModel.swift */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		150D4FF1292FCF3E004C154E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		152890922931228E00E6A38B /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
+		1548053C29338240004174A5 /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		155D69F22932479400C2B0E0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		157579AB2930436300945867 /* SneakerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerDetailViewModel.swift; sourceTree = "<group>"; };
 		157579AD29304CB900945867 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				158DA73E293006B8004A7FE0 /* CatalogViewModel.swift */,
 				157579AB2930436300945867 /* SneakerDetailViewModel.swift */,
 				157579AD29304CB900945867 /* CartViewModel.swift */,
+				1548053C29338240004174A5 /* MainTabBarViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */,
 				157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */,
 				155D69F32932479400C2B0E0 /* AuthService.swift in Sources */,
+				1548053D29338240004174A5 /* MainTabBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SneakerShopApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HWQZWN9UZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -559,6 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SneakerShopApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 8HWQZWN9UZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
