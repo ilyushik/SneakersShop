@@ -15,7 +15,9 @@ struct CartView: View {
                     PositionCell(position: position)
                         .swipeActions {
                             Button {
-                                viewModel.positions.removeAll()
+                                viewModel.positions.removeAll { pos in
+                                    pos.id == position.id
+                                }
                             } label: {
                                 Label("Удалить", systemImage: "trash")
                             }.tint(.red)
