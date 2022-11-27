@@ -62,7 +62,18 @@ struct CartView: View {
                     }
                     
                 }.padding(.horizontal)
-            }.safeAreaInset(edge: .bottom) {
+                // check this button
+            }.toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        viewModel.positions.removeAll()
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+
+                }
+            }
+            .safeAreaInset(edge: .bottom) {
                 Rectangle()
                     .frame(height: UIScreen.main.bounds.height * 0.07)
                     .foregroundColor(.clear)
