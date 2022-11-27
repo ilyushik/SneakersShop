@@ -17,6 +17,7 @@ struct AuthView: View {
     @State private var confirmPassword: String = ""
     @State private var isShowAlert = false
     @State private var alertMessage = ""
+    @ObservedObject var userInfo = UserInfo()
     
     
     var body: some View {
@@ -46,6 +47,22 @@ struct AuthView: View {
                             .textFieldStyle(.roundedBorder)
                             .textContentType(.password)
                             .padding()
+                        TextField("Введите имя", text: $userInfo.name)
+                            .textFieldStyle(.roundedBorder)
+                            .textContentType(.name)
+                            .padding()
+                        TextField("Введите фамилию", text: $userInfo.surname)
+                            .textFieldStyle(.roundedBorder)
+                            .textContentType(.username)
+                            .padding()
+                        TextField("Введите телефон", text: $userInfo.phone)
+                            .textFieldStyle(.roundedBorder)
+                            .textContentType(.telephoneNumber)
+                            .padding()
+                        TextField("Введите адресс", text: $userInfo.adress)
+                            .textFieldStyle(.roundedBorder)
+                            .padding()
+                        
                     }
                 }
                 
@@ -77,6 +94,9 @@ struct AuthView: View {
                             }
                         }
                     } else {
+                       
+                        
+                        
                         print("Регистрация пользователя")
                         
                         guard password == confirmPassword else {
@@ -101,6 +121,8 @@ struct AuthView: View {
                         }
                         
                         
+                        
+                        
                     }
                 } label: {
                     ZStack {
@@ -118,7 +140,7 @@ struct AuthView: View {
 
                 
             }.padding()
-            .frame(height: isAuth ? 350 : 410)
+            .frame(height: isAuth ? 350 : 650)
             .background(.thinMaterial)
             .cornerRadius(30)
             .padding()
@@ -127,11 +149,10 @@ struct AuthView: View {
                 
                 let mainTabBarViewModel = MainTabBarViewModel(user: AuthService.shared.currentUser!)
                 MainTabBar(viewModel: mainTabBarViewModel)
-                //MainTabBar()
             }
             .alert(alertMessage, isPresented: $isShowAlert) {
                 Button {
-                    //
+                    
                 } label: {
                     Text("OK")
                 }

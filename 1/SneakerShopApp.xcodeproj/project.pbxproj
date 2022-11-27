@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		150D4FF2292FCF3E004C154E /* MainTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150D4FF1292FCF3E004C154E /* MainTabBar.swift */; };
 		152890932931228E00E6A38B /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152890922931228E00E6A38B /* PositionCell.swift */; };
+		152C85802933F52A0018C702 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152C857F2933F52A0018C702 /* UserInfo.swift */; };
 		1548053D29338240004174A5 /* MainTabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1548053C29338240004174A5 /* MainTabBarViewModel.swift */; };
 		155D69F32932479400C2B0E0 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155D69F22932479400C2B0E0 /* AuthService.swift */; };
 		157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157579AB2930436300945867 /* SneakerDetailViewModel.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		150D4FF1292FCF3E004C154E /* MainTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBar.swift; sourceTree = "<group>"; };
 		152890922931228E00E6A38B /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
+		152C857F2933F52A0018C702 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		1548053C29338240004174A5 /* MainTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewModel.swift; sourceTree = "<group>"; };
 		155D69F22932479400C2B0E0 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		157579AB2930436300945867 /* SneakerDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SneakerDetailViewModel.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				15CBFCB1292FA62500C9E1BD /* Preview Content */,
 				158DA74329301242004A7FE0 /* HideTabView.swift */,
 				155D69F42932479A00C2B0E0 /* Services */,
+				152C857F2933F52A0018C702 /* UserInfo.swift */,
 			);
 			path = SneakerShopApp;
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				158DA73F293006B8004A7FE0 /* CatalogViewModel.swift in Sources */,
 				157579AC2930436300945867 /* SneakerDetailViewModel.swift in Sources */,
 				155D69F32932479400C2B0E0 /* AuthService.swift in Sources */,
+				152C85802933F52A0018C702 /* UserInfo.swift in Sources */,
 				1548053D29338240004174A5 /* MainTabBarViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

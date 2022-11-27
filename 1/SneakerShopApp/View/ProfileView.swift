@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct ProfileView: View {
+    
     @State var isAvaAlert = false
     @State var isOut = false
     @State var isOutAlert = false
+    
+    @ObservedObject var userInfo = UserInfo()
     
     var body: some View {
         VStack {
@@ -41,9 +44,13 @@ struct ProfileView: View {
 
                     }
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Илья Камарали")
-                        .bold()
-                    Text("+380 68 55 29 200")
+                    HStack(spacing: 6) {
+                        Text(userInfo.name)
+                            .bold()
+                        Text(userInfo.surname)
+                            .bold()
+                    }
+                    Text(userInfo.phone)
                 }
                 Spacer()
             }
@@ -52,7 +59,7 @@ struct ProfileView: View {
                 VStack(alignment: .leading, spacing: 5) {
                     Text("Адрес доставки:")
                         .bold()
-                    Text("Харьков, пр. Победы 68Г")
+                    Text(userInfo.adress)
                 }
                 Spacer()
             }.padding(.leading)
@@ -92,9 +99,9 @@ struct ProfileView: View {
                 .frame(height: UIScreen.main.bounds.height * 0.07)
                 .foregroundColor(.clear)
         }
-        .fullScreenCover(isPresented: $isOut) {
-            AuthView()
-        }
+//        .fullScreenCover(isPresented: $isOut) {
+//            AuthView()
+//        }
     }
 }
 
